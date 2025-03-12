@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #141414;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero .subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 3rem;
+  background-color: #ff4b5c;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about, .contact {
+  background-color: #4b4949;
+}
+
+.portfolio {
+  background-color: #292929;
+}
+
+.projects {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project {
+  padding: 2rem;
+  background-color: #383838;
+  border-radius: 15px;
+  width: 300px; /* Adjusted width for project boxes */
+  transition: transform 0.3s ease-in-out;
+  margin: 1rem;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 2px 0;
+  font-size: 12px;
+  width: 100%;
+  position: relative;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between icons */
+  margin-top: 1rem; /* Space above the icons */
+}
+
+.social-icons a {
+  color: #fff; /* Color of the icons */
+  font-size: 2rem; /* Size of the icons */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+  color: #ff4b5c; /* Change color on hover */
+}
